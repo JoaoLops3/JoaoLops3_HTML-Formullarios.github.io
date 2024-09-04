@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulário</title>
+</head>
+<body>
+	<h1>Formulário</h1>
+	<form action="https://www.w3schools.com/action_page.php" method="post">
+		<fieldset>
+			<legend>Dados de Acesso</legend>
+			<label for="usuario">Usuário:</label><br>
+			<input type="text" id="usuario" name="usuario"><br>
+			<label for="senha">Senha:</label><br>
+			<input type="password" id="senha" name="senha"><br>
+		</fieldset>
+		
+		<fieldset> <!-- Fieldset para agrupar campos de dados de acesso -->
+			<legend>Dados Pessoais</legend>  <!-- Legenda para o campo de dados pessoais -->
+			<label for="nome">Nome:</label><br>
+			<input type="text" id="nome" name="nome"><br>
+			<label for="endereco">Endereço:</label><br>
+			<input type="text" id="endereco" name="endereco"><br>
+			<label for="numero">Número:</label><br>
+			<input type="number" id="numero" name="numero"><br>
+			<label for="complemento">Complemento:</label><br>
+			<input type="text" id="complemento" name="complemento"><br>
+			<label for="cidade">Cidade:</label><br>
+			<input list="cidades" id="cidade" name="cidade">
+			<datalist id="cidades">
+				<option value="São Paulo">
+				<option value="Rio de Janeiro">
+				<option value="Brasília">
+                <option value="Sorocaba">
+                <option value="Tatuí">
+			</datalist><br>
+			<label for="estado">Estado:</label><br>
+			<select id="estado" name="estado">
+				<option value="SP">São Paulo</option>
+				<option value="RJ">Rio de Janeiro</option>
+				<option value="DF">Distrito Federal</option>
+			</select><br>
+			<label for="cep">CEP:</label><br>
+			<input type="text" id="cep" name="cep"><br>
+		</fieldset>
+		
+		<fieldset>
+			<legend>Gênero</legend>
+			<input type="radio" id="masculino" name="genero" value="Masculino">
+			<label for="masculino">Masculino</label><br>
+			<input type="radio" id="feminino" name="genero" value="Feminino">
+			<label for="feminino">Feminino</label><br>
+			<input type="radio" id="nao_falar" name="genero" value="Prefiro não falar">
+			<label for="nao_falar">Prefiro não falar</label><br>
+		</fieldset>
+		
+		<fieldset>
+			<legend>Curso</legend>
+			<input type="checkbox" id="ads" name="curso" value="ADS">
+			<label for="ads">ADS</label><br>
+			<input type="checkbox" id="jogos" name="curso" value="Jogos">
+			<label for="jogos">Jogos</label><br>
+			<input type="checkbox" id="gestao_ti" name="curso" value="Gestão de TI">
+			<label for="gestao_ti">Gestão de TI</label><br>
+			<input type="checkbox" id="banco_dados" name="curso" value="Banco de Dados">
+			<label for="banco_dados">Banco de Dados</label><br>
+            <input type="checkbox" id="engenharia_computacao" name="curso" value="Engenharia de Computação">
+			<label for="engenharia_computacao">Engenharia de Computação</label><br>
+		</fieldset>
+		
+		<fieldset>
+			<legend>Modelo</legend>
+			<input type="radio" id="presencial" name="modelo" value="Presencial">
+			<label for="presencial">Presencial</label><br>
+			<input type="radio" id="ead" name="modelo" value="EAD">
+			<label for="ead">EAD</label><br>
+			<input type="radio" id="semi_presencial" name="modelo" value="Semi Presencial">
+			<label for="semi_presencial">Semi Presencial</label><br>
+		</fieldset>
+		
+		<input type="submit" value="Enviar">
+	</form>
+</body>
+</html>
